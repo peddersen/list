@@ -28,8 +28,9 @@ time, mark, audio, video, input, button {
 }
 
 h1 {
-	background-image: -webkit-linear-gradient(to bottom, #ffb254, #a86a00);
-	background-color: #0fbcb9;
+	background: #ffb254;
+	/*background-image:linear-gradient(to bottom, #ffb254, #a86a00);*/
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffb254), color-stop(1, #a86a00) );
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-size: 22px;
@@ -44,6 +45,7 @@ h1 {
 form {
 	width: 75%;
 	height: 49px;
+	-webkit-flex:3;
 }
 input {
 	font-family: sans-serif;
@@ -61,6 +63,7 @@ button {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	-webkit-flex:1;
 }
 
 button:active {
