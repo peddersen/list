@@ -24,11 +24,11 @@ time, mark, audio, video, input, button {
 }
 
 #input-wrap {
-	display: flex;
+	display: -webkit-flex;
 }
 
 h1 {
-	/*background-image: linear-gradient(to bottom, #ffb254, #a86a00);*/
+	background-image: -webkit-linear-gradient(to bottom, #ffb254, #a86a00);
 	background-color: #0fbcb9;
 	font-family: sans-serif;
 	text-transform: uppercase;
@@ -55,7 +55,7 @@ input {
 button {
 	width:25%;
 	height:50px;
-	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	background-image: -webkit-linear-gradient(to bottom, #3498db, #2980b9);
 	color:white;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -73,11 +73,11 @@ button:active {
 }
 
 .item-red {
-	background-image: linear-gradient(to bottom, #a84f4f, #8a0000);
+	background-image: -webkit-linear-gradient(to bottom, #a84f4f, #8a0000);
 }
 
 .item-green {
-	background-image: linear-gradient(to bottom, #008f0a, #1ac400);
+	background-image: -webkit-linear-gradient(to bottom, #008f0a, #1ac400);
 }
 
 .item {
