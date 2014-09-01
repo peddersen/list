@@ -24,12 +24,13 @@ time, mark, audio, video, input, button {
 }
 
 #input-wrap {
-	display: -webkit-flex;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 50px;
 }
 
 h1 {
-	background: #ffb254;
-	/*background-image:linear-gradient(to bottom, #ffb254, #a86a00);*/
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffb254), color-stop(1, #a86a00) );
 	font-family: sans-serif;
 	text-transform: uppercase;
@@ -43,44 +44,33 @@ h1 {
 	letter-spacing: 3px;
 }
 form {
-	width: 75%;
-	height: 49px;
 	-webkit-flex:3;
+	height: 100%;
 }
 input {
 	font-family: sans-serif;
 	text-transform: uppercase;
-	width: 100%;
-	height: 100%;
 	outline-style: none;
+	height: 100%;
+	width: 100%;
 }
 button {
-	width:25%;
-	height:50px;
-	background-image: -webkit-linear-gradient(to bottom, #3498db, #2980b9);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3498db), color-stop(1, #2980b9) );
 	color:white;
 	font-family: sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	-webkit-flex:1;
-}
-
-button:active {
-	/*background-image: linear-gradient(to bottom, #2980b9, #3498db);	*/
-	width: 15%;
-	height: 35px;
-	font-size:12px;
-	margin-top: 0.75%;
-	margin-left: 7%;
+	text-shadow: 0px 1px 6px #000000;
 }
 
 .item-red {
-	background-image: -webkit-linear-gradient(to bottom, #a84f4f, #8a0000);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a84f4f), color-stop(1, #8a0000) );
 }
 
 .item-green {
-	background-image: -webkit-linear-gradient(to bottom, #008f0a, #1ac400);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #008f0a), color-stop(1, #1ac400) );
 }
 
 .item {
