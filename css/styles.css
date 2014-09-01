@@ -61,7 +61,6 @@ button {
 	height: 48px;
 	font-family: sans-serif;
 	font-weight: bold;
-	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-shadow: 0px 1px 6px #000000;
 	position:fixed;
@@ -79,7 +78,7 @@ button {
 
 .item {
 	font-family: sans-serif;
-	font-size:46px;
+	font-size:32px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bolder;
@@ -87,4 +86,3 @@ button {
 	text-align: center;
 	padding:15px 0;
 }
-

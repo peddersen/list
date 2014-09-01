@@ -9,20 +9,29 @@ $(document).ready(function(){
 		};
 		$('input').val('');
 		$('input').focus();
-
 		});
+
 	$(document).on('click', '.item', function(){
 		$(this).toggleClass('item-red');
 		$(this).toggleClass('item-green');
-
 	});
+
+	var timeoutId = 0;
+	$(document).on('mousedown', '.item', function(){
+		var $this= $(this);
+		timeoutId = setTimeout(function(){ $this.remove() }, 500);
+	}).bind('mouseup mouseleave', function() {
+		clearTimeout(timeoutId);
+	});
+
+
 	$('input').keypress(function (evt) {
-	var charCode = evt.charCode || evt.keyCode;
-	if (charCode  == 13) { //Enter key's keycode
-	return false;
-}
+		var charCode = evt.charCode || evt.keyCode;
+		if (charCode  == 13) { //Enter key's keycode
+			return false;
+		}
+	});
+
 });
 
-	
-	
-});
+//
