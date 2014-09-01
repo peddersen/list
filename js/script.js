@@ -16,7 +16,12 @@ $(document).ready(function(){
 		$(this).toggleClass('item-green');
 
 	});
-
+	$('input').keypress(function (evt) {
+	var charCode = evt.charCode || evt.keyCode;
+	if (charCode  == 13) { //Enter key's keycode
+	return false;
+}
+});
 
 	
 	
