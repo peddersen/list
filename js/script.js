@@ -8,8 +8,7 @@ $(document).ready(function(){
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
 		$('input').val('');
-		$('.item').blur();
-		$('input').focus();
+		document.getElementById('eingabe').focus();
 		});
 
 	$(document).on('tap', '.item', function(){
