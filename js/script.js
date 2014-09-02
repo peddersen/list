@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$(this).toggleClass('item-green');
 	});
 
-	$(document).on('swipe', '.item', function(){
+	$(document).on('longTap', '.item', function(){
 		$(this).remove();
 	});
 	
