@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('button').click(function(){
+	$('button').tap(function(){
 		var toAdd = $('input[name=einkauf-element]').val();
 		if (toAdd == ''){
 			return false;
@@ -11,14 +11,11 @@ $(document).ready(function(){
 		$('input').focus();
 		});
 
-	$(document).on('click', '.item', function(){
+	$(document).on('tap', '.item', function(){
 		$(this).toggleClass('item-red');
 		$(this).toggleClass('item-green');
 	});
 
-	$(document).on('swipe', '.item', function(){
-		$(this).remove();               
-	});
 	
 /*
 	var timeoutId = 0;
