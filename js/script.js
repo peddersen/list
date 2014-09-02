@@ -7,13 +7,11 @@ $(document).ready(function(){
 		else {
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
-		$('input').val('');
-		$('input').focus();
+		$('input').val('').focus();
 		});
 
 	$(document).on('tap', '.item', function(){
-		$(this).toggleClass('item-red');
-		$(this).toggleClass('item-green');
+		$(this).toggleClass('item-red').toggleClass('item-green');
 	});
 
 	$(document).on('longTap', '.item', function(){
