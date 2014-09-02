@@ -16,10 +16,9 @@ $(document).ready(function(){
 		$(this).toggleClass('item-green');
 	});
 
-	$(document).on("swipe",".item",function(){
-    	$(this).remove();
-  	});                       
-	
+	$(document).on('swipe', '.item', function(){
+		$(this).remove();               
+	});
 	
 /*
 	var timeoutId = 0;

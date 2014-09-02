@@ -30,9 +30,8 @@ time, mark, audio, video, input, button {
 }
 
 h1 {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffb254), color-stop(1, #a86a00) );
+	background:#ffb254;
 	font-family: sans-serif;
-	text-transform: uppercase;
 	font-size: 22px;
 	padding:20px 0;
 	text-align: center;
@@ -57,33 +56,27 @@ input {
 	width: 100%;
 }
 button {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #50b6fa), color-stop(1, #256c99) );
+	background:#50b6fa;
 	color:white;
 	width:25%;
 	height: 48px;
 	font-family: sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-shadow: 0px 1px 6px #000000;
 	position:fixed;
 	right:0;
 	top:66px;
 }
 
 .item-red {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a84f4f), color-stop(1, #8a0000) );
+	background:#a84f4f;
 }
 
 .item-green {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #008f0a), color-stop(1, #1ac400) );
+	background:#008f0a;
 }
 
 .item {
 	font-family: sans-serif;
 	font-size:32px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bolder;
 	color: #ffffff;
 	text-align: center;
 	padding:15px 0;
