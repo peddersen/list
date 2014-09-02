@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on("swipe",".item",function(){
-    	$(this).hide();
+    	$(this).remove();
   	});                       
 	
 	
