@@ -16,6 +16,12 @@ $(document).ready(function(){
 		$(this).toggleClass('item-green');
 	});
 
+	$(document).on("swipe",".item",function(){
+    	$(this).hide();
+  	});                       
+	
+	
+/*
 	var timeoutId = 0;
 	$(document).on('mousedown', '.item', function(){
 		var $this= $(this);
@@ -23,7 +29,7 @@ $(document).ready(function(){
 	}).bind('mouseup mouseleave', function() {
 		clearTimeout(timeoutId);
 	});
-
+*/
 
 	$('input').keypress(function (evt) {
 		var charCode = evt.charCode || evt.keyCode;

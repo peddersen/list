@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,10 +20,6 @@ time, mark, audio, video, input, button {
 	vertical-align: baseline;
 }
 
-html {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-}
 
 #container{
 	margin-top: 64px;
@@ -90,6 +87,4 @@ button {
 	color: #ffffff;
 	text-align: center;
 	padding:15px 0;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
 }
