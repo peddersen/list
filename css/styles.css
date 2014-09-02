@@ -19,6 +19,11 @@ time, mark, audio, video, input, button {
 	vertical-align: baseline;
 }
 
+html {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
 #container{
 	margin-top: 64px;
 }
