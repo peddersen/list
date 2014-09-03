@@ -1,3 +1,6 @@
+function(){
+document.eingabeform.einkaufelement.focus();
+};
 $(document).ready(function(){
 	$(document).on('tap', 'button', function(){
 		var toAdd = $('input[name=einkaufelement]').val();
@@ -8,7 +11,7 @@ $(document).ready(function(){
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
 		$('input').val('');
-		document.eingabeform.einkaufelement.focus();
+		
 		});
 
 	$(document).on('tap', '.item', function(){
