@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('button').tap(function(){
+	$(document).on('tap', 'button', function(){
 		var toAdd = $('input[name=einkauf-element]').val();
 		if (toAdd == ''){
 			return false;
@@ -8,7 +8,7 @@ $(document).ready(function(){
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
 		$('input').val('');
-		document.getElementById('eingabe').focus();
+		$('input').focus();
 		});
 
 	$(document).on('tap', '.item', function(){
@@ -18,16 +18,6 @@ $(document).ready(function(){
 	$(document).on('longTap', '.item', function(){
 		$(this).remove();
 	});
-	
-/*
-	var timeoutId = 0;
-	$(document).on('mousedown', '.item', function(){
-		var $this= $(this);
-		timeoutId = setTimeout(function(){ $this.remove() }, 500);
-	}).bind('mouseup mouseleave', function() {
-		clearTimeout(timeoutId);
-	});
-*/
 
 	$('input').keypress(function (evt) {
 		var charCode = evt.charCode || evt.keyCode;
