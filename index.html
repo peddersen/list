@@ -12,7 +12,11 @@
 
   </head>
   <body>
-
+        <script type="text/javascript">
+          function fokus(){
+            document.eingabeform.einkaufelement.focus();
+          };
+        </script>
         <h1>Einkaufsliste</h1>
         <div id="container">
           
@@ -21,7 +25,7 @@
               <input type="text" name="einkaufelement" placeholder="Hier Sachen reinschreiben..." />
             </form>
           
-            <button>GO ▼</button>
+            <button onclick="fokus()">GO ▼</button>
           </div>
           <div id="liste"></div>
         </div>
