@@ -120,11 +120,11 @@ h1 {
 
 #delete {
 	font-family: sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	background: #ff6d6d;
 	color: #ffffff;
 	text-align: center;
-	padding: 8px 0;
+	padding: 14px 0;
 	text-transform: uppercase;
 	letter-spacing: 10px;
 	width:250px;
