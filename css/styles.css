@@ -52,7 +52,7 @@ time, mark, audio, video, input, button {
 }
 
 #name-button {
-	background:#54c975;
+	background:#50b6fa;
 	color:white;
 	width:40%;
 	height: 48px;
@@ -74,7 +74,7 @@ h1 {
 	top:0px;
 	color: white;
 	letter-spacing: 3px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 #eingabeform {
 	height: 48px;
@@ -91,7 +91,7 @@ h1 {
 	width: 100%;
 }
 #list-button {
-	background:#54c975;
+	background:#50b6fa;
 	color:white;
 	width:25%;
 	height: 48px;
@@ -102,11 +102,11 @@ h1 {
 }
 
 .item-red {
-	background:#cb5fd3;
+	background:#EE6A9B;
 }
 
 .item-green {
-	background:#50b6fa;
+	background:#54c975;
 }
 
 .item {
@@ -125,5 +125,12 @@ h1 {
 	color: #ffffff;
 	text-align: center;
 	padding: 15px 0;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	border:10px solid #8c0000;
+	width:250px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 10px;
+	line-height: 50px;
 }

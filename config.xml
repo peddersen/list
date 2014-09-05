@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.kaipeters.einkaufsliste"
+        id          = "com.kaipeters.list"
         versionCode = "10" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Einfache Einkaufsliste</name>
+    <name>List</name>
 
     <description>
-        Item mit 'Notieren' hinzufügen. Einmal klicken um von rot auf grün umzuschalten. 
+        Name your list and add items. Tap to mark as done. Tap again to unmark as done. Tap long to delete this item. 
     </description>
 
     <author href="https://wwww.kai-peters.com" email="kaipetersxanten@gmail.com">

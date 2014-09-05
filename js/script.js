@@ -1,6 +1,9 @@
 $(document).ready(function(){
+	$('#delete').hide();
 
-	$('#name-button').tap(function(){
+	$(document).on('click', '#name-button', function(){ // <-- uncomment for desktop testing, comment for mobile
+	
+	//$('#name-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
 		var listName = $('input[name=list-name]').val();
 		if (listName == ''){
 			return false;
@@ -10,10 +13,13 @@ $(document).ready(function(){
 		};
 		$('#list-name-form').remove();
 		$('#name-button').remove();
+		$('p').remove();
 		$('#container').toggleClass('hide-see');
 	})
 
-	$('#list-button').tap(function(){
+	$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
+
+	//$('#list-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
 		var toAdd = $('input[name=einkaufelement]').val();
 		if (toAdd == ''){
 			return false;
@@ -22,6 +28,7 @@ $(document).ready(function(){
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
 		$('#item-input').val('');
+		$('#delete').show();
 		});
 
 	$(document).on('tap', '.item', function(){
