@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	$('#delete').hide();
 
-	$(document).on('click', '#name-button', function(){ // <-- uncomment for desktop testing, comment for mobile
+	//$(document).on('click', '#name-button', function(){ // <-- uncomment for desktop testing, comment for mobile
 	
-	//$('#name-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
+	$('#name-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
 		var listName = $('input[name=list-name]').val();
 		if (listName == ''){
 			return false;
@@ -17,9 +17,9 @@ $(document).ready(function(){
 		$('#container').toggleClass('hide-see');
 	})
 
-	$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
+	//$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
 
-	//$('#list-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
+	$('#list-button').tap(function(){  // <-- comment for desktop testing, uncomment for mobile
 		var toAdd = $('input[name=einkaufelement]').val();
 		if (toAdd == ''){
 			return false;
@@ -37,6 +37,7 @@ $(document).ready(function(){
 
 	$(document).on('tap', '#delete', function(){
 		$('.item').remove();
+		$(this).hide();
 	});
 
 	$(document).on('longTap', '.item', function(){
