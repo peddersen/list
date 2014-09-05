@@ -13,11 +13,11 @@ $(document).ready(function(){
 	$(document).on('tap', '.item', function(){
 		$(this).toggleClass('item-red').toggleClass('item-green');
 	});
-
+/*
 	$(document).on('tap', '#delete', function(){
 		&('.item').remove();
 	});
-
+*/
 	$(document).on('longTap', '.item', function(){
 		$(this).remove();
 	});
