@@ -35,10 +35,11 @@ time, mark, audio, video, input, button {
 
 #list-name-form {
 	height:50px;
-	width: 75%;
+	width: 70%;
 	position: fixed;
-	left: 0;
-	top:0;
+	left: 15%;
+	right:15%;
+	top:30px;
 }
 
 #list-name {
@@ -47,17 +48,19 @@ time, mark, audio, video, input, button {
 	outline-style: none;
 	height: 100%;
 	width: 100%;
+	border:1px solid #bfbfbf;
 }
 
 #name-button {
 	background:#54c975;
 	color:white;
-	width:25%;
+	width:40%;
 	height: 48px;
 	font-family: sans-serif;
 	position:fixed;
-	right:0;
-	top:0;
+	right:30%;
+	left: 30%;
+	top:90px;
 }
 
 h1 {
