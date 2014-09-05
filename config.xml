@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>List</name>
+    <name>LIST</name>
 
     <description>
         Name your list and add items. Tap to mark as done. Tap again to unmark as done. Tap long to delete this item. 
