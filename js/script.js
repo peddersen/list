@@ -13,8 +13,7 @@ $(document).ready(function(){
 		};
 		$('#list-name-form').remove();
 		$('#name-button').remove();
-		$('p').remove();
-		$('#container').toggleClass('hide-see');
+		//$('#container').toggleClass('hide-see');
 	})
 
 	//$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
@@ -31,11 +30,11 @@ $(document).ready(function(){
 		$('#delete').show();
 		});
 
-	$(document).on('tap', '.item', function(){
+	$(document).on('tap', '.item', function(){ // <-- change 'tap' to 'click' for desktop testing
 		$(this).toggleClass('item-red').toggleClass('item-green');
 	});
 
-	$(document).on('tap', '#delete', function(){
+	$(document).on('tap', '#delete', function(){ // <-- change 'tap' to 'click' for desktop testing
 		$('.item').remove();
 		$(this).hide();
 	});

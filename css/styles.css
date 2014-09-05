@@ -32,22 +32,21 @@ html {
 #container{
 	margin-top: 64px;
 }
-
+/*
 .hide-see {
 	display: none;
 }
-
+*/
 #input-wrap {
     height: 50px;
 }
 
 #list-name-form {
 	height:50px;
-	width: 70%;
+	width: 75%;
 	position: fixed;
-	left: 15%;
-	right:15%;
-	top:30px;
+	left: 0;
+	top:0;
 }
 
 #list-name {
@@ -56,19 +55,18 @@ html {
 	outline-style: none;
 	height: 100%;
 	width: 100%;
-	border:1px solid #bfbfbf;
+	/*border:1px solid #bfbfbf;*/
 }
 
 #name-button {
 	background:#50b6fa;
 	color:white;
-	width:40%;
+	width:25%;
 	height: 48px;
 	font-family: sans-serif;
 	position:fixed;
-	right:30%;
-	left: 30%;
-	top:90px;
+	right:0;
+	top:0;
 }
 
 h1 {
