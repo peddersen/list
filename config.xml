@@ -26,7 +26,7 @@
 
     <gap:config-file platform="android" parent="/manifest">
         <activity   android:alwaysRetainTaskState="true"
-                    android:launcheMode="singleTask" />
+                    android:launchMode="singleTask" />
     </gap:config-file>
 
 </widget>
