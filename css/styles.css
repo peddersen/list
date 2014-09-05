@@ -25,8 +25,39 @@ time, mark, audio, video, input, button {
 	margin-top: 64px;
 }
 
+.hide-see {
+	display: none;
+}
+
 #input-wrap {
     height: 50px;
+}
+
+#list-name-form {
+	height:50px;
+	width: 75%;
+	position: fixed;
+	left: 0;
+	top:0;
+}
+
+#list-name {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	outline-style: none;
+	height: 100%;
+	width: 100%;
+}
+
+#name-button {
+	background:#54c975;
+	color:white;
+	width:25%;
+	height: 48px;
+	font-family: sans-serif;
+	position:fixed;
+	right:0;
+	top:0;
 }
 
 h1 {
@@ -40,23 +71,24 @@ h1 {
 	top:0px;
 	color: white;
 	letter-spacing: 3px;
+	text-transform: capitalize;
 }
-form {
+#eingabeform {
 	height: 48px;
 	width:75%;
 	position: fixed;
 	left: 0;
 	top: 66px;
 }
-input {
+#item-input {
 	font-family: sans-serif;
 	text-transform: uppercase;
 	outline-style: none;
 	height: 100%;
 	width: 100%;
 }
-button {
-	background:#50b6fa;
+#list-button {
+	background:#54c975;
 	color:white;
 	width:25%;
 	height: 48px;
@@ -67,11 +99,11 @@ button {
 }
 
 .item-red {
-	background:#a84f4f;
+	background:#cb5fd3;
 }
 
 .item-green {
-	background:#008f0a;
+	background:#50b6fa;
 }
 
 .item {
@@ -80,6 +112,7 @@ button {
 	color: #ffffff;
 	text-align: center;
 	padding:15px 0;
+	text-transform: capitalize;
 }
 
 #delete {
@@ -89,4 +122,5 @@ button {
 	color: #ffffff;
 	text-align: center;
 	padding: 15px 0;
+	margin-top: 10px;
 }

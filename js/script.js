@@ -1,5 +1,19 @@
 $(document).ready(function(){
-	$('button').tap(function(){
+
+	$('#name-button').tap(function(){
+		var listName = $('input[name=list-name]').val();
+		if (listName == ''){
+			return false;
+		}
+		else {
+			$('#container').prepend('<h1>' + listName + '</h1>');
+		};
+		$('#list-name-form').remove();
+		$('#name-button').remove();
+		$('#container').toggleClass('hide-see');
+	})
+
+	$('#list-button').tap(function(){
 		var toAdd = $('input[name=einkaufelement]').val();
 		if (toAdd == ''){
 			return false;
@@ -7,7 +21,7 @@ $(document).ready(function(){
 		else {
 			$('#liste').append('<div class="item item-red">' + toAdd + '</div>');
 		};
-		$('input').val('');
+		$('#item-input').val('');
 		});
 
 	$(document).on('tap', '.item', function(){
