@@ -25,7 +25,8 @@
     <gap:plugin name="org.apache.cordova.device" />
 
     <gap:config-file platform="android" parent="/manifest">
-        <activity android:alwaysRetainTaskState="true" />
+        <activity   android:alwaysRetainTaskState="true"
+                    android:launcheMode="singleTask" />
     </gap:config-file>
 
 </widget>
