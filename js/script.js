@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('#delete').hide();
+	$('#newList').hide();
 
 	//$(document).on('click', '#name-button', function(){ // <-- uncomment for desktop testing, comment for mobile
 	
@@ -13,7 +14,7 @@ $(document).ready(function(){
 		};
 		$('#list-name-form').remove();
 		$('#name-button').remove();
-		//$('#container').toggleClass('hide-see');
+		$('#container').toggleClass('hide-see');
 	})
 
 	//$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
@@ -28,6 +29,7 @@ $(document).ready(function(){
 		};
 		$('#item-input').val('');
 		$('#delete').show();
+		$('#newList').show();
 		});
 
 	$(document).on('tap', '.item', function(){ // <-- change 'tap' to 'click' for desktop testing
@@ -37,6 +39,10 @@ $(document).ready(function(){
 	$(document).on('tap', '#delete', function(){ // <-- change 'tap' to 'click' for desktop testing
 		$('.item').remove();
 		$(this).hide();
+	});
+
+	$(document).on('tap', '#newList', function(){ // <-- change 'tap' to 'click' for desktop testing
+		location.reload();
 	});
 
 	$(document).on('longTap', '.item', function(){
