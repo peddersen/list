@@ -25,15 +25,7 @@
     <gap:plugin name="org.apache.cordova.device" />
 
     <gap:config-file platform="android" parent="/manifest">
-        <activity   android:alwaysRetainTaskState="true"
-                    android:launchMode="singleInstance"
-                    android:clearTaskOnLaunch="false"
-                    android:finishOnTaskLaunch="false">
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.DEFAULT" />
-                    </intent-filter>
-        </activity>
+        <activity android:launchMode="singleInstance" />
     </gap:config-file>
 
 </widget>
