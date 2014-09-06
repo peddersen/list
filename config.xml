@@ -23,6 +23,11 @@
     <icon src="img/icon.png" />
 
     <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.5.0" />
+
+    <gap:config-file platform="android" parent="/manifest">
+        <application>
+            <activity  android:launchMode="singleTask" />
+        </application>
+    </gap:config-file>
 
 </widget>
