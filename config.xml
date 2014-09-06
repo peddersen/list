@@ -29,10 +29,11 @@
                     android:launchMode="singleTask"
                     android:clearTaskOnLaunch="false"
                     android:finishOnTaskLaunch="false">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.DEFAULT" />
-    </intent-filter> />
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+        </activity>
     </gap:config-file>
 
 </widget>
