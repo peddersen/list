@@ -15,7 +15,8 @@ $(document).ready(function(){
 		$('#list-name-form').remove();
 		$('#name-button').remove();
 		$('#container').toggleClass('hide-see');
-	})
+		$('#item-input').blur();
+	});
 
 	//$(document).on('click', '#list-button', function(){ // <-- uncomment for desktop testing, comment for mobile
 
